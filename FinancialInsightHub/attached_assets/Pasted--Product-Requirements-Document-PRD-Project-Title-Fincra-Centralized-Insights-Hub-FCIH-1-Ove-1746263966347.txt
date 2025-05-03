@@ -1,0 +1,71 @@
+🧾 Product Requirements Document (PRD)
+Project Title:
+Fincra Centralized Insights Hub (FCIH)
+
+1. Overview
+The goal of this project is to build a centralized, real-time, AI-powered dashboard system tailored to multiple departments at Fincra. Each department will have its own analytics view (e.g. Finance, HR, Operations), and the system will offer role-based access control (RBAC) and AI prompt querying to enable business users to ask questions about their data and get instant answers—similar to Amazon Q.
+
+This MVP will use dummy data to simulate integrations with real-world tools like New Relic, BambooHR, AWS Redshift, Notion, Metabase, and Google Sheets.
+
+2. Objectives
+Enable real-time, department-specific insights.
+
+Centralize disparate data sources in one unified view.
+
+Provide AI-powered query prompts for users to interact with data.
+
+Support RBAC so each user only sees relevant data.
+
+Be deployable and interactive via platforms like Replit.
+
+3. Target Users
+Finance: To monitor FX exposure, cash flow, and liabilities.
+
+Payments/Ops: To track transaction errors, success rates, downtime.
+
+HR: For headcount insights, leave trends, HMO coverage.
+
+Engineering/Product: To monitor app performance and alerts via New Relic.
+
+Leadership/Strategy: To view top-level summaries and cross-functional insights.
+
+4. Features
+🔹 A. Core Dashboards (Per Department)
+
+Department	Dashboard Focus
+Finance	Real-time ALM, FX exposure, inflow/outflow
+Payments/Ops	Transaction success/error rate, processing time, retries
+HR	Headcount, leave stats, onboarding speed, attrition
+Engineering	Application performance, alerts, latency (from New Relic)
+Strategy	Company-wide KPI trends, summaries across teams
+🔹 B. Role-Based Access Control (RBAC)
+Admins can access all dashboards.
+
+Department users see only their relevant data view.
+
+Secure login system (mocked in MVP).
+
+🔹 C. AI Prompt Assistant
+Chat UI to ask:
+
+“What’s our FX exposure today?”
+
+“Which country has the most failed transactions?”
+
+“What’s the onboarding time trend over the last 3 months?”
+
+Uses embedded context from dummy data + OpenAI API or similar (mocked or connected).
+
+🔹 D. Data Sources (Simulated)
+New Relic: App metrics & alerts.
+
+BambooHR: HR data like headcount, leave, etc.
+
+Notion: Task/project trackers.
+
+AWS Redshift: Cash positions, FX transactions.
+
+Metabase: Reports & business metrics.
+
+Google Sheets: Budget trackers, survey results, etc.
+
